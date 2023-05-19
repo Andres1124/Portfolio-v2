@@ -1,0 +1,39 @@
+<script>
+</script>
+<template>
+    <div class="bg-container-color py-28">
+        <div class="container mx-auto flex flex-col lg:flex-row">
+            <div class="w-full text-center px-5 lg:w-1/2 lg:text-left">
+                <p class="text-white font-semibold pb-2">
+                    Favorite <span class="text-color-primary">Skills</span>
+                </p>
+                <h2 class="text-4xl text-white font-bold pb-5">
+                    My Skills
+                </h2>
+                <p class="text-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, deserunt? Ipsa debitis quis eaque.
+                </p>
+                <div class="mt-14">
+                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg">
+                        See projects
+                    </a>
+                </div>
+            </div>
+            <div class="w-full px-5 mt-5 lg:w-1/3 lg:mt-0">
+                <div class="flex justify-center">
+                    <ol class="text-white font-semibold px-5 lg:px-10">
+                        <li class="pt-8"><span class="text-color-primary">01.</span> HTML & CSS</li>
+                        <li class="pt-8"><span class="text-color-primary">02.</span> Javascript</li>
+                        <li class="pt-8"><span class="text-color-primary">03.</span> Tailwind</li>
+                        <li class="pt-8"><span class="text-color-primary">04.</span> VueJs</li>
+                    </ol> 
+                    <ol class="text-white font-semibold px-5 lg:px-10">
+                        <li class="pt-8"><span class="text-color-primary">05.</span> Laravel</li>
+                        <li class="pt-8"><span class="text-color-primary">06.</span> MySql</li>
+                        <li class="pt-8"><span class="text-color-primary">07.</span> Git & GitHub</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
