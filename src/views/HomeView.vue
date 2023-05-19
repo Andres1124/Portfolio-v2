@@ -3,10 +3,11 @@ import HeaderApp from '../components/layouts/HeaderApp.vue';
 import HomeSection from '../components/HomeSection.vue';
 import AboutSection from '../components/AboutSection.vue';
 import ServicesSection from '../components/ServicesSection.vue';
+import ProjectsSection from '../components/ProjectsSection.vue';
 
 
 export default {
-    components: { HeaderApp, HomeSection, AboutSection, ServicesSection }
+    components: { HeaderApp, HomeSection, AboutSection, ServicesSection, ProjectsSection }
 }
 
 </script>
@@ -16,5 +17,6 @@ export default {
        <HomeSection />
        <AboutSection />
        <ServicesSection />
+       <ProjectsSection />
     </div>
 </template>
