@@ -5,7 +5,7 @@
     --title-color: hsl(228, 8%, 95%);
     --text-color: hsl(228, 8%, 65%);
     --body-color: hsl(228, 15%, 20%);
-    --container-color: hsl(228, 15%, 15%);
+    --container-color: #21232c;
 
     --body-font: "Poppins", sans-serif;
 }
