@@ -15,3 +15,15 @@ body {
     color: #fff;
     font-family: var(--body-font);
 }
+
+.text-color-primary {
+    color: var(--first-color);
+}
+
+.text-body {
+    color: var(--text-color)
+}
+
+.title-color {
+    color: var(--title-color);
+}

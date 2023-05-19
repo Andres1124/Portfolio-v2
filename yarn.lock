@@ -218,6 +218,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@tabler/icons-vue@^2.19.0":
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-vue/-/icons-vue-2.19.0.tgz#8e376eb59f853f25f617a8b8883e613bbb369315"
+  integrity sha512-qrq8v4AFMFAl8sNFIL0lClkeFe0upXqA88Zn5hWy/ZHFjpj+4U+Qo7CQWm/ccUMYG95d2RdSIpzKCeuRQo38QA==
+  dependencies:
+    "@tabler/icons" "2.19.0"
+
+"@tabler/icons@2.19.0":
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.19.0.tgz#685a794adab6c4f4ce3ceec41132d405ca31f353"
+  integrity sha512-3bqWTxFOFkrld+hx0nDSgwGWPrP2NeB9ySCAqWjXMN0hwewXYnNPpDKkOYtDfUDRtB+iiR/0FyW+kki6tu6qkQ==
+
 "@vitejs/plugin-vue@^4.1.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.2.3.tgz#ee0b6dfcc62fe65364e6395bf38fa2ba10bb44b6"

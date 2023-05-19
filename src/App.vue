@@ -1,6 +1,7 @@
 <script setup>
+import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
- <h1>{{ $t('hello') }}</h1>
+    <HomeView />
 </template>
