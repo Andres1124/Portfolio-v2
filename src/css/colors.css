@@ -2,9 +2,9 @@
     --hue: 162;
     --first-color: #00AEFF;
     --first-color-alt: #00a2ff;
-    --title-color: hsl(228, 8%, 95%);
-    --text-color: hsl(228, 8%, 65%);
-    --body-color: hsl(228, 15%, 20%);
+    --title-color: #f1f2f3;
+    --text-color: #9fa1ad;
+    --body-color: #2b2e3b;
     --container-color: #21232c;
 
     --body-font: "Poppins", sans-serif;

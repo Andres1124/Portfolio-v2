@@ -1,0 +1,45 @@
+<script>
+export default {
+    
+}
+</script>
+<template>
+    <div class="container mx-auto py-8">
+         <div>
+            <h6 class="text-white font-semibold pb-4 text-center">
+                Get In <span class="text-color-primary">Touch</span>
+            </h6>
+            <h2 class="text-4xl text-white font-bold pb-5 text-center">
+                Contact Me
+            </h2>
+        </div>
+        <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
+            <form>
+                <div class="flex flex-col lg:flex-row">
+                    <input 
+                        class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:mr-2"
+                        type="text" 
+                        placeholder="Enter your name">
+                    <input 
+                        class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:ml-2"
+                        type="text" 
+                        placeholder="Enter your name">
+                </div>
+                <div class="mt-4">
+                    <textarea 
+                        class="w-full rounded-lg bg-container-color p-4 text-body focus:outline-none" 
+                        name="message" 
+                        id="message" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="Enter your message"></textarea>
+                </div>
+                <div class="mt-8 flex justify-center">
+                    <button class="px-4 py-3 bg-primary text-white font-semibold rounded-lg">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>
