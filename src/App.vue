@@ -2,5 +2,5 @@
 </script>
 
 <template>
- <h1>Portfolio</h1>
+ <h1>{{ $t('hello') }}</h1>
 </template>

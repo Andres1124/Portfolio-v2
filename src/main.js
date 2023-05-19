@@ -1,5 +1,22 @@
 import { createApp } from 'vue';
+import { createI18n } from 'vue-i18n'
+import en from './locales/en.json'
+import es from './locales/es.json'
 import './css/app.css';
 import App from './App.vue';
 
-createApp(App).mount('#app')
+const i18n = createI18n({
+    legacy: false,
+    locale: 'es',
+    globalInjection: true,
+    messages: {
+        en,
+        es,
+    }
+})
+
+
+const app = createApp(App)
+
+app.use(i18n)
+app.mount('#app')
