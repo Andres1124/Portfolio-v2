@@ -15,7 +15,7 @@ import { ref } from 'vue';
     }
 </script>
 <template>
-    <nav class="p-5 fixed w-full">
+    <nav class="p-5 fixed w-full bg-container-color">
         <div class="flex items-center justify-between container mx-auto relative">
             <div>
                 <p class="text-xl text-white font-bold">

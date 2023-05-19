@@ -31,3 +31,7 @@ body {
 .bg-primary {
     background-color: var(--first-color);
 }
+
+.bg-container-color {
+    background-color: var(--container-color);
+}

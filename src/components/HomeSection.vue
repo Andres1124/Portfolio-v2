@@ -6,7 +6,7 @@ export default {
 }
 </script>
 <template>
-    <div class="w-full h-screen flex justify-center items-center">
+    <div class="w-full h-screen flex justify-center items-center bg-container-color">
         <div class="flex flex-col justify-center items-center container mx-auto lg:flex-row">
             <div class="w-full lg:w-1/2 px-5 text-center lg:text-left">
                 <h3 class="text-3xl text-white font-semibold pb-4">
@@ -22,18 +22,18 @@ export default {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus quam cum. Eum laboriosam qui consequuntur.
                 </p>
                 <div class="mt-14">
-                    <a href="#" class="p-4 bg-primary text-white font-semibold rounded-lg">
+                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg">
                         Lets's Talk
                     </a>
                 </div>
                 <div class="flex items-center justify-center mt-20 lg:justify-start">
-                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mr-9">
+                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4">
                         <IconBrandGithub :size="30" stroke-width="2" />
                     </a>
-                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mr-9">
+                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4">
                         <IconBrandLinkedin :size="30" stroke-width="2" />
                     </a>
-                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mr-9">
+                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4">
                         <IconMail :size="30" stroke-width="2" />
                     </a>
                 </div>

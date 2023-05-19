@@ -1,9 +1,10 @@
 <script>
 import HeaderApp from '../components/layouts/HeaderApp.vue';
 import HomeSection from '../components/HomeSection.vue';
+import AboutSection from '../components/AboutSection.vue';
 
 export default {
-    components: { HeaderApp, HomeSection }
+    components: { HeaderApp, HomeSection, AboutSection }
 }
 
 </script>
@@ -11,5 +12,6 @@ export default {
     <div>
        <HeaderApp />
        <HomeSection />
+       <AboutSection />
     </div>
 </template>
