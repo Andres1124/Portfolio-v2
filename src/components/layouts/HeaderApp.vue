@@ -1,7 +1,17 @@
 <script>
 import { IconMenu2 } from '@tabler/icons-vue';
+import { ref } from 'vue';
     export default {
-        components: { IconMenu2 }
+        components: { IconMenu2 },
+
+        setup(props) {
+            const url = ref(window.location);
+            
+
+            return {
+                url,
+            }
+        }
     }
 </script>
 <template>
@@ -14,27 +24,32 @@ import { IconMenu2 } from '@tabler/icons-vue';
             </div>
             <div class="hidden items-center lg:flex">
                 <div class="px-4">
-                    <a class="text-white font-bold hover:text-[#00AEFF] ease-linear duration-200 cursor-pointer">
+                    <a href="#" class="font-bold ease-linear duration-200 cursor-pointer"
+                        :class="url.hash === '' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
                         Home
                     </a>
                 </div>
                 <div class="px-4">
-                    <a class="text-white font-bold hover:text-[#00AEFF] ease-linear duration-200 cursor-pointer">
+                    <a href="#about" class="font-bold ease-linear duration-200 cursor-pointer"
+                        :class="url.hash === '#about' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
                         About
                     </a>
                 </div>
                 <div class="px-4">
-                    <a class="text-white font-bold hover:text-[#00AEFF] ease-linear duration-200 cursor-pointer">
+                    <a href="#services" class="font-bold ease-linear duration-200 cursor-pointer"
+                        :class="url.hash === '#services' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
                         Services
                     </a>
                 </div>
                 <div class="px-4">
-                    <a class="text-white font-bold hover:text-[#00AEFF] ease-linear duration-200 cursor-pointer">
+                    <a href="#projects" class="font-bold ease-linear duration-200 cursor-pointer"
+                        :class="url.hash === '#projects' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
                         Projects
                     </a>
                 </div>
                 <div class="px-4">
-                    <a class="text-white font-bold hover:text-[#00AEFF] ease-linear duration-200 cursor-pointer">
+                    <a href="#contact" class="font-bold ease-linear duration-200 cursor-pointer"
+                        :class="url.hash === '#contact' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
                         Contact
                     </a>
                 </div>
