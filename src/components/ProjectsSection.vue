@@ -15,7 +15,7 @@ export default {
                     Recent Projects
                 </h2>
             </div>
-            <div class="flex flex-col mt-6 justify-center lg:flex-row">
+            <div class="flex flex-col mt-6 justify-center items-center lg:flex-row">
                 <div class="w-[300px] h-[200px] flex justify-center items-center bg-container-color rounded-lg">
                     <h3 class="text-white font-bold">
                         Coming soon...
