@@ -22,21 +22,25 @@ export default {
                     {{ $t('home_description') }}
                 </p>
                 <div class="mt-14">
-                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold
+                    <a href="https://www.linkedin.com/in/andr%C3%A9s-delgado-p%C3%A9rez-135a311b6/" target="_blank"
+                        class="px-4 py-3 bg-primary text-white font-semibold
                                         rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500">
                         {{ $t("lets_talk") }}
                     </a>
                 </div>
                 <div class="flex items-center justify-center mt-20 lg:justify-start">
-                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4 
+                    <a href="https://github.com/Andres1124" target="_blank"
+                        class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">
                         <IconBrandGithub :size="30" />
                     </a>
-                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4 hover:scale-[.90] duration-700 
+                    <a href="https://www.linkedin.com/in/andr%C3%A9s-delgado-p%C3%A9rez-135a311b6/" target="_blank" 
+                        class="p-2 w-max text-white bg-primary rounded-full mx-4 hover:scale-[.90] duration-700 
                                         border-2 border-[#00AEFF] hover:bg-transparent">
                         <IconBrandLinkedin :size="30" />
                     </a>
-                    <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4 
+                    <a href="emailto:andresdegladoperez19@gmail.com"
+                        class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">
                         <IconMail :size="30" />
                     </a>

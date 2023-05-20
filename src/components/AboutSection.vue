@@ -21,7 +21,8 @@ export default {
                     {{ $t('about_me_description') }}
                 </p>
                 <div class="mt-14">
-                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500">
+                    <a href="https://www.linkedin.com/in/andr%C3%A9s-delgado-p%C3%A9rez-135a311b6/" target="_blank"
+                        class="px-4 py-3 bg-primary text-white font-semibold rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500">
                         {{ $t('contact_me') }}
                     </a>
                 </div>
