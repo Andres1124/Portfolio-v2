@@ -6,6 +6,7 @@ import ServicesSection from '../components/ServicesSection.vue';
 import ProjectsSection from '../components/ProjectsSection.vue';
 import ContactSection from '../components/ContactSection.vue';
 import FooterApp from '../components/layouts/FooterApp.vue';
+import ButtonLanguages from '../components/ButtonLanguages.vue';
 
 
 export default {
@@ -17,6 +18,7 @@ export default {
         ProjectsSection, 
         ContactSection, 
         FooterApp,
+        ButtonLanguages,
     }
 }
 
@@ -24,6 +26,7 @@ export default {
 <template>
     <div>
        <HeaderApp />
+       <ButtonLanguages />
        <HomeSection />
        <AboutSection />
        <ServicesSection />

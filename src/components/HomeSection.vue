@@ -10,7 +10,7 @@ export default {
         <div class="flex flex-col justify-center items-center container mx-auto lg:flex-row">
             <div class="w-full lg:w-1/2 px-5 text-center lg:text-left">
                 <h3 class="text-3xl text-white font-semibold pb-4">
-                    Hello, <span class="text-color-primary">I'm</span>
+                    {{ $t('hello') }}, <span class="text-color-primary">I'm</span>
                 </h3>
                 <h1 class="text-color-primary text-6xl font-bold pb-4">
                     Andrés Delgado

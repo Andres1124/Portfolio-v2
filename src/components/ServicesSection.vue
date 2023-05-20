@@ -14,7 +14,7 @@ export default {
             What I Do
         </h2>
         <div class="flex flex-col items-center justify-center lg:justify-between lg:flex-row">
-            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] lg:mx-2 lg:mt-0 lg:w-1/3">
+            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconDeviceDesktopCode class="mx-auto" :size="60" stroke-width="2" />
                 </div>
@@ -27,7 +27,7 @@ export default {
                     </p>
                 </div>
             </div>
-            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] lg:mx-2 lg:mt-0 lg:w-1/3">
+            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconCode class="mx-auto" :size="60" stroke-width="2.5" />
                 </div>
@@ -40,7 +40,7 @@ export default {
                     </p>
                 </div>
             </div>
-            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] lg:mx-2 lg:mt-0 lg:w-1/3">
+            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconCode class="mx-auto" :size="60" stroke-width="2.5" />
                 </div>

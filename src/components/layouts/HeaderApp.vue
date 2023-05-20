@@ -20,12 +20,10 @@ import { ref, onBeforeUnmount, onMounted } from 'vue';
                 sections.forEach(current => {
                     const sectionHeight = current.offsetHeight,
                           sectionTop = current.offsetTop - 150,
-                          sectionId = current.getAttribute('id'),
-                          sectionClass = document.querySelector('.item-nav a[href*='+ sectionId +']');
+                          sectionId = current.getAttribute('id')
 
                     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                         section.value = sectionId
-                        console.log(section.value)
                     }
                 })
             }
