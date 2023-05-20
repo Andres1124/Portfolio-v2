@@ -17,7 +17,7 @@ export default {
                 <h2 class="text-white font-bold pb-5 text-4xl">
                     {{ $t('about_me') }}
                 </h2>
-                <p class="text-body break-all">
+                <p class="text-body break-words">
                     {{ $t('about_me_description') }}
                 </p>
                 <div class="mt-14">
