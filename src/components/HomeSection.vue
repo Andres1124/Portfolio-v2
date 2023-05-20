@@ -6,7 +6,7 @@ export default {
 }
 </script>
 <template>
-    <div class="w-full h-screen flex justify-center items-center bg-container-color">
+    <section id="home" class="w-full h-screen flex justify-center items-center bg-container-color">
         <div class="flex flex-col justify-center items-center container mx-auto lg:flex-row">
             <div class="w-full lg:w-1/2 px-5 text-center lg:text-left">
                 <h3 class="text-3xl text-white font-semibold pb-4">
@@ -48,5 +48,5 @@ export default {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>

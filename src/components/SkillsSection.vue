@@ -1,7 +1,7 @@
 <script>
 </script>
 <template>
-    <div class="bg-container-color py-28">
+    <section class="bg-container-color py-28">
         <div class="container mx-auto flex flex-col lg:flex-row">
             <div class="w-full text-center px-5 lg:w-1/2 lg:text-left">
                 <p class="text-white font-semibold pb-2">
@@ -36,5 +36,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>

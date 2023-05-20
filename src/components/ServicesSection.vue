@@ -6,7 +6,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container mx-auto px-5 py-12">
+    <section id="services" class="container mx-auto px-5 py-12">
         <h6 class="text-white font-semibold pb-4 text-center">
             My <span class="text-color-primary">Services</span>
         </h6>
@@ -54,5 +54,5 @@ export default {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>

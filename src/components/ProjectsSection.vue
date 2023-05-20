@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="bg-container-color py-8">
+    <section id="projects" class="bg-container-color py-8">
 
         <div class="container mx-auto">
             <div>
@@ -23,5 +23,5 @@ export default {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>

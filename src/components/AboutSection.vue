@@ -6,7 +6,7 @@ export default {
 }
 </script>
 <template>
-    <div class="">
+    <section id="about" class="">
         <div class="container mx-auto flex flex-col items-center lg:flex-row">
             <div class="w-full h-[400px] lg:w-1/2 lg:h-[600px]">
             </div>
@@ -30,5 +30,5 @@ export default {
             </div>
         </div>
         <SkillsSection />
-    </div>
+    </section>
 </template>

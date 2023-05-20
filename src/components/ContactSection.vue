@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container mx-auto py-8">
+    <section id="contact" class="container mx-auto py-8">
          <div>
             <h6 class="text-white font-semibold pb-4 text-center">
                 Get In <span class="text-color-primary">Touch</span>
@@ -42,5 +42,5 @@ export default {
                 </div>
             </form>
         </div>
-    </div>
+    </section>
 </template>
