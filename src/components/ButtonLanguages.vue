@@ -10,8 +10,6 @@ export default {
         const i18n = useI18n();
 
         const changeLanguage = (locale) => {
-            console.log(i18n.locale)
-            console.log(locale)
             i18n.locale.value = locale
         }
 
@@ -27,7 +25,10 @@ export default {
     <div class="lang-container">
         <input type="checkbox" id="btn-lang">
         <div class="languages">
-            <div class="icon-lang" v-for="locale in $i18n.availableLocales" @click="changeLanguage(locale)">
+            <div v-for="locale in $i18n.availableLocales" @click="changeLanguage(locale)"
+                 class="icon-lang flex border-2 w-12 h-12 border-[#00AEFF] cursor-pointer
+                         font-semibold items-center justify-center text-center rounded-full transition-all ease-linear duration-200"
+                 :class="$i18n.locale === locale ? 'bg-transparent' : 'bg-primary'">
                 {{ locale.toUpperCase() }}
             </div>
         </div>
@@ -49,15 +50,15 @@ export default {
     right: 20px;
 }
 
-.languages div, .btn-lang{
+.btn-lang{
     display: flex;
     background-color: #00AEFF;
     cursor: pointer;
     border: solid 2px #00AEFF;
     font-weight: 600;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -77,10 +78,6 @@ export default {
 
 .languages {
     transition: all 500 ease;
-}
-
-.icon-lang:hover{
-    color: #00AEFF;
 }
 
 .languages div {

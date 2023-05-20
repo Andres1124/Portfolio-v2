@@ -87,11 +87,11 @@ import { ref, onBeforeUnmount, onMounted } from 'vue';
                     </a>
                 </div>
                 <div @click="showHeader()" class="flex lg:hidden text-white absolute top-5 right-5 cursor pointer">
-                    <IconX :size="30" stroke-width="2" />
+                    <IconX :size="30" />
                 </div>
             </div>
             <div @click="showHeader()" class="flex lg:hidden cursor-pointer">
-                <IconMenu2 :size="30" stroke-width="2.5" />
+                <IconMenu2 :size="30" />
             </div>
         </div>
     </nav>

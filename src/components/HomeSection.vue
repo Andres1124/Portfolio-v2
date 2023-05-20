@@ -30,15 +30,15 @@ export default {
                 <div class="flex items-center justify-center mt-20 lg:justify-start">
                     <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">
-                        <IconBrandGithub :size="30" stroke-width="2" />
+                        <IconBrandGithub :size="30" />
                     </a>
                     <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4 hover:scale-[.90] duration-700 
                                         border-2 border-[#00AEFF] hover:bg-transparent">
-                        <IconBrandLinkedin :size="30" stroke-width="2" />
+                        <IconBrandLinkedin :size="30" />
                     </a>
                     <a href="#" class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">
-                        <IconMail :size="30" stroke-width="2" />
+                        <IconMail :size="30" />
                     </a>
                 </div>
             </div>

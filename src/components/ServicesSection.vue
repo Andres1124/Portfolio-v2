@@ -16,7 +16,7 @@ export default {
         <div class="flex flex-col items-center justify-center lg:justify-between lg:flex-row">
             <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
-                    <IconDeviceDesktopCode class="mx-auto" :size="60" stroke-width="2" />
+                    <IconDeviceDesktopCode class="mx-auto" :size="60" />
                 </div>
                 <div class="py-4">
                     <h3 class="text-center text-white font-semibold pb-5">
@@ -29,7 +29,7 @@ export default {
             </div>
             <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
-                    <IconCode class="mx-auto" :size="60" stroke-width="2.5" />
+                    <IconCode class="mx-auto" :size="60" />
                 </div>
                 <div class="py-4">
                     <h3 class="text-center text-white font-semibold pb-5">
@@ -42,7 +42,7 @@ export default {
             </div>
             <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
-                    <IconCode class="mx-auto" :size="60" stroke-width="2.5" />
+                    <IconCode class="mx-auto" :size="60" />
                 </div>
                 <div class="py-4">
                     <h3 class="text-center text-white font-semibold pb-5">
