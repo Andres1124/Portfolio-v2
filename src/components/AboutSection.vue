@@ -12,19 +12,17 @@ export default {
             </div>
             <div class="w-full px-5 text-center py-6 lg:w-1/2 lg:text-left">
                 <p class="font-semibold text-white pb-2">
-                    My <span class="text-color-primary">Intro</span>
+                    {{ $t('my') }} <span class="text-color-primary">{{ $t('intro') }}</span>
                 </p>
                 <h2 class="text-white font-bold pb-5 text-4xl">
-                    About Me
+                    {{ $t('about_me') }}
                 </h2>
-                <p class="text-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                     minima eum aspernatur ad sequi nihil numquam asperiores dolores totam fuga quam porro,
-                      assumenda facilis deleniti, quasi enim provident quia. Dolorem!
+                <p class="text-body break-all">
+                    {{ $t('about_me_description') }}
                 </p>
                 <div class="mt-14">
                     <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500">
-                        Contact Me
+                        {{ $t('contact_me') }}
                     </a>
                 </div>
             </div>

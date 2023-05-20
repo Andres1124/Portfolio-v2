@@ -14,7 +14,7 @@
                         Andrés <span class="text-color-primary">Delgado</span>
                     </h1>
                     <h3 class="text-lg text-white font-semibold pb-4">
-                        Front-end Developer
+                        {{ $t('web_developer') }}
                     </h3>
                 </div>
                 <div class="flex items-center mt-8 justify-center w-full lg:mt-0 lg:w-1/3">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="w-full mt-8  lg:mt-0 lg:w-1/3">
                     <p class="text-body text-sm text-center lg:text-right">
-                        &copy; Copyright Andrés Delgado. All rights reserved
+                        &copy; {{ $t('copyright_description') }}
                     </p>
                 </div>
             </div>

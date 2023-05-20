@@ -1,29 +1,29 @@
 <script>
-import { IconCode, IconDeviceDesktopCode } from '@tabler/icons-vue';
+import { IconCode, IconDeviceDesktopCode, IconCodeDots } from '@tabler/icons-vue';
 
 export default {
-    components: { IconCode, IconDeviceDesktopCode }
+    components: { IconCode, IconDeviceDesktopCode, IconCodeDots }
 }
 </script>
 <template>
     <section id="services" class="container mx-auto px-5 py-12">
         <h6 class="text-white font-semibold pb-4 text-center">
-            My <span class="text-color-primary">Services</span>
+            {{ $t('my') }} <span class="text-color-primary">{{ $t('services') }}</span>
         </h6>
         <h2 class="text-4xl text-white font-bold pb-5 text-center">
-            What I Do
+            {{ $t('what_i_do') }}
         </h2>
-        <div class="flex flex-col items-center justify-center lg:justify-between lg:flex-row">
+        <div class="flex flex-col justify-center lg:justify-between lg:flex-row">
             <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconDeviceDesktopCode class="mx-auto" :size="60" />
                 </div>
                 <div class="py-4">
                     <h3 class="text-center text-white font-semibold pb-5">
-                        Front-end developer
+                        {{ $t('web_developer') }}
                     </h3>
                     <p class="text-body text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nobis labore fugiat officiis. Quam?
+                        {{ $t('web_developer_description') }}
                     </p>
                 </div>
             </div>
@@ -33,23 +33,23 @@ export default {
                 </div>
                 <div class="py-4">
                     <h3 class="text-center text-white font-semibold pb-5">
-                        Design UI
+                        {{ $t('frontend_developer') }}
                     </h3>
                     <p class="text-body text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nobis labore fugiat officiis. Quam?
+                        {{ $t('frontend_developer_description') }}
                     </p>
                 </div>
             </div>
             <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
-                    <IconCode class="mx-auto" :size="60" />
+                    <IconCodeDots class="mx-auto" :size="60" />
                 </div>
                 <div class="py-4">
                     <h3 class="text-center text-white font-semibold pb-5">
-                        Back-end developer
+                        {{ $t('backend_developer') }}
                     </h3>
                     <p class="text-body text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nobis labore fugiat officiis. Quam?
+                        {{ $t('backend_developer_description') }}
                     </p>
                 </div>
             </div>

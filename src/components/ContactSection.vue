@@ -7,10 +7,10 @@ export default {
     <section id="contact" class="container mx-auto py-8">
          <div>
             <h6 class="text-white font-semibold pb-4 text-center">
-                Get In <span class="text-color-primary">Touch</span>
+                {{ $t('get_in') }} <span class="text-color-primary">{{ $t('touch') }}</span>
             </h6>
             <h2 class="text-4xl text-white font-bold pb-5 text-center">
-                Contact Me
+                {{ $t('contact_me') }}
             </h2>
         </div>
         <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
@@ -19,11 +19,11 @@ export default {
                     <input 
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:mr-2"
                         type="text" 
-                        placeholder="Enter your name">
+                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? { field: 'name' } : { field: 'nombre' })">
                     <input 
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:ml-2"
-                        type="text" 
-                        placeholder="Enter your email">
+                        type="email" 
+                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'email'} : { field: 'correo' })">
                 </div>
                 <div class="mt-4">
                     <textarea 
@@ -32,12 +32,12 @@ export default {
                         id="message" 
                         cols="30" 
                         rows="10"
-                        placeholder="Enter your message"></textarea>
+                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'message'} : { field: 'Mensaje' })"></textarea>
                 </div>
                 <div class="mt-8 flex justify-center">
                     <button class="px-4 py-3 bg-primary text-white font-semibold rounded-lg 
                                     border-2 border-[#00AEFF] hover:bg-transparent duration-500">
-                        Send Message
+                        {{ $t('send_message') }}
                     </button>
                 </div>
             </form>

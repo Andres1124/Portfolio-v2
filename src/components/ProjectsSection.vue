@@ -9,16 +9,16 @@ export default {
         <div class="container mx-auto">
             <div>
                 <h6 class="text-white font-semibold pb-4 text-center">
-                    My <span class="text-color-primary">Jobs</span>
+                    {{ $t('my_') }} <span class="text-color-primary">{{ $t('jobs') }}</span>
                 </h6>
                 <h2 class="text-4xl text-white font-bold pb-5 text-center">
-                    Recent Projects
+                    {{ $t('recent_projects') }}
                 </h2>
             </div>
             <div class="flex flex-col mt-6 justify-center items-center lg:flex-row">
                 <div class="w-[300px] h-[200px] flex justify-center items-center bg-container-color rounded-lg">
                     <h3 class="text-white font-bold">
-                        Coming soon...
+                        {{ $t('coming_soon') }}
                     </h3>
                 </div>
             </div>

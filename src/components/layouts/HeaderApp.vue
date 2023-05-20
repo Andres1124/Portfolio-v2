@@ -59,31 +59,31 @@ import { ref, onBeforeUnmount, onMounted } from 'vue';
                 <div class="px-4 mt-14 item-nav lg:mt-0">
                     <a @click="showHeader()" href="#home" class="font-bold ease-linear duration-200 cursor-pointer"
                         :class="section === 'home' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
-                        Home
+                        {{ $t('home') }}
                     </a>
                 </div>
                 <div class="px-4 mt-10 item-nav lg:mt-0">
                     <a @click="showHeader()" href="#about" class="font-bold ease-linear duration-200 cursor-pointer"
                         :class="section === 'about' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
-                        About
+                        {{ $t('about') }}
                     </a>
                 </div>
                 <div class="px-4 mt-10 item-nav lg:mt-0">
                     <a @click="showHeader()" href="#services" class="font-bold ease-linear duration-200 cursor-pointer"
                         :class="section === 'services' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
-                        Services
+                        {{ $t('services') }}
                     </a>
                 </div>
                 <div class="px-4 mt-10 item-nav lg:mt-0">
                     <a @click="showHeader()" href="#projects" class="font-bold ease-linear duration-200 cursor-pointer"
                         :class="section === 'projects' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
-                        Projects
+                        {{ $t('projects') }}
                     </a>
                 </div>
                 <div class="px-4 mt-10 item-nav lg:mt-0">
                     <a @click="showHeader()" href="#contact" class="font-bold ease-linear duration-200 cursor-pointer"
                         :class="section === 'contact' ? 'text-[#00AEFF] hover:text-white' : 'text-white hover:text-[#00AEFF]'">
-                        Contact
+                        {{ $t('contact') }}
                     </a>
                 </div>
                 <div @click="showHeader()" class="flex lg:hidden text-white absolute top-5 right-5 cursor pointer">
