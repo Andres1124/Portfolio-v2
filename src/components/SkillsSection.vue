@@ -14,7 +14,8 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, deserunt? Ipsa debitis quis eaque.
                 </p>
                 <div class="mt-14">
-                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg">
+                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg
+                                        border-2 border-[#00AEFF] hover:bg-transparent duration-500">
                         See projects
                     </a>
                 </div>

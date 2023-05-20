@@ -23,7 +23,7 @@ export default {
                     <input 
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:ml-2"
                         type="text" 
-                        placeholder="Enter your name">
+                        placeholder="Enter your email">
                 </div>
                 <div class="mt-4">
                     <textarea 
@@ -35,7 +35,8 @@ export default {
                         placeholder="Enter your message"></textarea>
                 </div>
                 <div class="mt-8 flex justify-center">
-                    <button class="px-4 py-3 bg-primary text-white font-semibold rounded-lg">
+                    <button class="px-4 py-3 bg-primary text-white font-semibold rounded-lg 
+                                    border-2 border-[#00AEFF] hover:bg-transparent duration-500">
                         Send Message
                     </button>
                 </div>

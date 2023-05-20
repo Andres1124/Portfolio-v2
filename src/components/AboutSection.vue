@@ -23,7 +23,7 @@ export default {
                       assumenda facilis deleniti, quasi enim provident quia. Dolorem!
                 </p>
                 <div class="mt-14">
-                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg">
+                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500">
                         Contact Me
                     </a>
                 </div>
