@@ -17,7 +17,8 @@
                     {{ $t('skills_description') }}
                 </p>
                 <div class="mt-14">
-                    <a href="#" class="px-4 py-3 bg-primary text-white font-semibold rounded-lg
+                    <a href="https://github.com/Andres1124" target="_blank" 
+                        class="px-4 py-3 bg-primary text-white font-semibold rounded-lg
                                         border-2 border-[#00AEFF] hover:bg-transparent duration-500">
                         {{ $t('see_projects') }}
                     </a>
