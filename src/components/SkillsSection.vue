@@ -24,15 +24,15 @@
                     </a>
                 </div>
             </div>
-            <div class="w-full px-5 mt-5 lg:w-1/3 lg:mt-0">
-                <div class="flex justify-center">
-                    <ol class="text-white font-semibold mx-10">
+            <div class="w-full flex justify-center mt-5 lg:mt-0 lg:w-1/2">
+                <div class="flex flex-col items-center lg:flex-row lg:items-start">
+                    <ol class="text-white font-semibold px-5">
                         <li class="pt-8"><span class="text-color-primary">01.</span> HTML & CSS</li>
                         <li class="pt-8"><span class="text-color-primary">02.</span> Javascript</li>
                         <li class="pt-8"><span class="text-color-primary">03.</span> Tailwind</li>
                         <li class="pt-8"><span class="text-color-primary">04.</span> VueJs</li>
                     </ol> 
-                    <ol class="text-white font-semibold px-5 lg:px-10">
+                    <ol class="text-white font-semibold px-5">
                         <li class="pt-8"><span class="text-color-primary">05.</span> Laravel</li>
                         <li class="pt-8"><span class="text-color-primary">06.</span> MySql</li>
                         <li class="pt-8"><span class="text-color-primary">07.</span> Git & GitHub</li>
