@@ -1,9 +1,11 @@
 <script>
+import { onMounted } from 'vue';
 export default {
 
     setup(props) {
         const handleSubmit = (event) => {
-            event.preventDefault();
+            console.log(event)
+            // event.preventDefault();
 
             const myForm = event.target;
             const formData = new FormData(myForm);
@@ -17,11 +19,11 @@ export default {
                 .catch((error) => alert(error));
         };
 
-        onMounted(() => {
-            document
-                .querySelector("form-contact")
-                .addEventListener("submit", handleSubmit);
-        }),
+        // onMounted(() => {
+        //     let form = document.getElementById("form-contact")
+        //     console.log(form)
+        //     form.addEventListener('submit', handleSubmit());
+        // })
 
 
         return {
