@@ -14,7 +14,7 @@ export default {
             </h2>
         </div>
         <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
-            <form name="contact" netlify>
+            <form name="contact" data-netlify="true" method="POST">
                 <div class="flex flex-col lg:flex-row">
                     <input 
                         name="name"
