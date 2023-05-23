@@ -1,5 +1,26 @@
 <script>
 export default {
+
+    setup(props) {
+        const handleSubmit = (event) => {
+            event.preventDefault();
+
+            const myForm = event.target;
+            const formData = new FormData(myForm);
+
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+                .then(() => console.log("Form successfully submitted"))
+                .catch((error) => alert(error));
+        };
+
+        document
+            .querySelector("form")
+            .addEventListener("submit", handleSubmit);
+    }
     
 }
 </script>
@@ -14,7 +35,12 @@ export default {
             </h2>
         </div>
         <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
-            <form name="contact" data-netlify="true" method="POST" data-netlify-honeypot="bot-field">
+            <form 
+                @submit.prevent="handleSubmit" 
+                name="contact" 
+                data-netlify="true" 
+                method="POST" 
+                data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 <div class="flex flex-col lg:flex-row">
                     <input 
