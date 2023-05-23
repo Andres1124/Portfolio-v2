@@ -48,9 +48,7 @@ export default {
                 id="form-contact"
                 @submit.prevent="handleSubmit" 
                 name="contact" 
-                data-netlify="true" 
-                method="POST" 
-                data-netlify-honeypot="bot-field">
+                method="POST">
                 <input type="hidden" name="form-name" value="contact" />
                 <div class="flex flex-col lg:flex-row">
                     <input 
