@@ -5,7 +5,7 @@ export default {
     setup(props) {
         const handleSubmit = (event) => {
             console.log(event)
-            // event.preventDefault();
+            event.preventDefault();
 
             const myForm = event.target;
             const formData = new FormData(myForm);
