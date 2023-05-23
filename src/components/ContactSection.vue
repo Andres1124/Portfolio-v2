@@ -14,13 +14,15 @@ export default {
             </h2>
         </div>
         <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
                 <div class="flex flex-col lg:flex-row">
                     <input 
+                        name="name"
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:mr-2"
                         type="text" 
                         :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? { field: 'name' } : { field: 'nombre' })">
                     <input 
+                        name="email"
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:ml-2"
                         type="email" 
                         :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'email'} : { field: 'correo' })">
