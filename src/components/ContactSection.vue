@@ -17,9 +17,16 @@ export default {
                 .catch((error) => alert(error));
         };
 
-        document
-            .querySelector("form")
-            .addEventListener("submit", handleSubmit);
+        onMounted(() => {
+            document
+                .querySelector("form-contact")
+                .addEventListener("submit", handleSubmit);
+        }),
+
+
+        return {
+            handleSubmit,
+        }
     }
     
 }
@@ -36,6 +43,7 @@ export default {
         </div>
         <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
             <form 
+                id="form-contact"
                 @submit.prevent="handleSubmit" 
                 name="contact" 
                 data-netlify="true" 
