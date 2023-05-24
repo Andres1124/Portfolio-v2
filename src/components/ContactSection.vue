@@ -38,7 +38,11 @@ export default {
 </script>
 <template>
     <section id="contact" class="container mx-auto py-28">
-         <div>
+         <div 
+            data-aos="fade-up" 
+            data-aos-duration="500" 
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine">
             <h6 class="text-white font-semibold pb-4 text-center">
                 {{ $t('get_in') }} <span class="text-color-primary">{{ $t('touch') }}</span>
             </h6>
@@ -46,7 +50,12 @@ export default {
                 {{ $t('contact_me') }}
             </h2>
         </div>
-        <div class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
+        <div
+            data-aos="fade-right" 
+            data-aos-duration="500" 
+            data-aos-delay="800"
+            data-aos-easing="ease-in-sine"  
+            class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
             <form 
                 id="form-contact"
                 @submit.prevent="handleSubmit" 

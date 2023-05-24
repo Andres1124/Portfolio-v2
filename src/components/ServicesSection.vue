@@ -7,14 +7,29 @@ export default {
 </script>
 <template>
     <section id="services" class="container mx-auto px-5 py-28">
-        <h6 class="text-white font-semibold pb-4 text-center">
+        <h6 
+            data-aos="fade-up" 
+            data-aos-duration="500" 
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine" 
+            class="text-white font-semibold pb-4 text-center">
             {{ $t('my') }} <span class="text-color-primary">{{ $t('services') }}</span>
         </h6>
-        <h2 class="text-4xl text-white font-bold pb-5 text-center">
+        <h2 
+            data-aos="fade-up" 
+            data-aos-duration="500" 
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine" 
+            class="text-4xl text-white font-bold pb-5 text-center">
             {{ $t('what_i_do') }}
         </h2>
         <div class="flex flex-col justify-center lg:justify-between lg:flex-row">
-            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
+            <div
+                data-aos="zoom-in-up" 
+                data-aos-duration="500" 
+                data-aos-delay="900"
+                data-aos-easing="ease-in-sine"  
+                class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconDeviceDesktopCode class="mx-auto" :size="60" />
                 </div>
@@ -27,7 +42,12 @@ export default {
                     </p>
                 </div>
             </div>
-            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
+            <div
+                data-aos="zoom-in-up" 
+                data-aos-duration="500" 
+                data-aos-delay="900"
+                data-aos-easing="ease-in-sine"  
+                class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconCode class="mx-auto" :size="60" />
                 </div>
@@ -40,7 +60,12 @@ export default {
                     </p>
                 </div>
             </div>
-            <div class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
+            <div
+                data-aos="zoom-in-up" 
+                data-aos-duration="500" 
+                data-aos-delay="900"
+                data-aos-easing="ease-in-sine"  
+                class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
                     <IconCodeDots class="mx-auto" :size="60" />
                 </div>
