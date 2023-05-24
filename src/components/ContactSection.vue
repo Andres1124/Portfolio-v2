@@ -19,7 +19,8 @@ export default {
                 body: new URLSearchParams(formData).toString(),
             })
                 .then(() => {
-                    sendForm.value = true
+                    myForm.reset();
+                    sendForm.value = true;
                     setTimeout(() => {
                         sendForm.value = false;
                     }, 4000);
