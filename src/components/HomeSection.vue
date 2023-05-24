@@ -39,7 +39,7 @@ export default {
                                         border-2 border-[#00AEFF] hover:bg-transparent">
                         <IconBrandLinkedin :size="30" />
                     </a>
-                    <a href="emailto:andresdegladoperez19@gmail.com"
+                    <a href="mailto:andresdegladoperez19@gmail.com"
                         class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">
                         <IconMail :size="30" />
