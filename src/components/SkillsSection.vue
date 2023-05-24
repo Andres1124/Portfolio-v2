@@ -4,7 +4,7 @@
     <section class="bg-container-color py-28">
         <div class="container mx-auto flex flex-col lg:flex-row">
             <div
-                data-aos="fade-right" 
+                data-aos="fade-up" 
                 data-aos-duration="500" 
                 data-aos-delay="600"
                 data-aos-easing="ease-in-sine"

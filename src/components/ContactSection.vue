@@ -51,7 +51,7 @@ export default {
             </h2>
         </div>
         <div
-            data-aos="fade-right" 
+            data-aos="fade-up" 
             data-aos-duration="500" 
             data-aos-delay="800"
             data-aos-easing="ease-in-sine"  

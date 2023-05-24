@@ -9,7 +9,7 @@ export default {
     <section id="about" class="">
         <div class="container mx-auto py-28 flex flex-col items-center lg:flex-row">
             <div
-                data-aos="fade-right" 
+                data-aos="fade-up" 
                 data-aos-duration="500" 
                 data-aos-delay="600"
                 data-aos-easing="ease-in-sine"
@@ -19,7 +19,7 @@ export default {
                 </div>
             </div>
             <div
-                data-aos="fade-left" 
+                data-aos="fade-up" 
                 data-aos-duration="500" 
                 data-aos-delay="900"
                 data-aos-easing="ease-in-sine"

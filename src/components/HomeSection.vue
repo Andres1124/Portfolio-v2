@@ -18,7 +18,7 @@ export default {
         <div class="flex flex-col justify-center items-center container mx-auto lg:flex-row">
             <div class="w-full lg:w-1/2 px-5 text-center">
                 <h3
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-duration="500" 
                     data-aos-easing="ease-in-sine"
@@ -26,7 +26,7 @@ export default {
                     {{ $t('hello') }}, <span class="text-color-primary">{{ $t('i_am') }}</span>
                 </h3>
                 <h1
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-delay="400"
                     data-aos-duration="500" 
@@ -35,7 +35,7 @@ export default {
                     Andrés Delgado
                 </h1>
                 <h3 
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-duration="500" 
                     data-aos-delay="700"
