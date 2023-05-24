@@ -7,7 +7,7 @@ export default {
 </script>
 <template>
     <section id="about" class="">
-        <div class="container mx-auto py-8 flex flex-col items-center lg:flex-row">
+        <div class="container mx-auto py-28 flex flex-col items-center lg:flex-row">
             <div class="w-full flex items-center justify-center lg:w-1/2">
                 <div class="h-[250px] w-[250px] bg-white rounded-full overflow-hidden border-2 lg:w-[350px] lg:h-[350px]">
                     <img class="mx-auto h-full" src="../assets/images/avatars.png" alt="avatar">

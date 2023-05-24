@@ -8,7 +8,7 @@ export default {
 <template>
     <section id="home" class="w-full h-screen flex justify-center items-center bg-container-color">
         <div class="flex flex-col justify-center items-center container mx-auto lg:flex-row">
-            <div class="w-full lg:w-1/2 px-5 text-center lg:text-left">
+            <div class="w-full lg:w-1/2 px-5 text-center">
                 <h3 class="text-3xl text-white font-semibold pb-4">
                     {{ $t('hello') }}, <span class="text-color-primary">{{ $t('i_am') }}</span>
                 </h3>
@@ -28,7 +28,7 @@ export default {
                         {{ $t("lets_talk") }}
                     </a>
                 </div>
-                <div class="flex items-center justify-center mt-20 lg:justify-start">
+                <div class="flex items-center justify-center mt-20">
                     <a href="https://github.com/Andres1124" target="_blank"
                         class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">
@@ -46,13 +46,13 @@ export default {
                     </a>
                 </div>
             </div>
-            <div class="w-full hidden lg:flex lg:w-1/2">
+            <!-- <div class="w-full hidden lg:flex lg:w-1/2">
                 <div class="w-full h-full flex justify-center items-center">
                     <div class="h-[300px] w-[300px] bg-white rounded-full overflow-hidden border-2">
                         <img class="mx-auto h-full" src="../assets/images/avatars.png" alt="avatar">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

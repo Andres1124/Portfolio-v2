@@ -6,7 +6,7 @@ export default {
 }
 </script>
 <template>
-    <section id="services" class="container mx-auto px-5 py-12">
+    <section id="services" class="container mx-auto px-5 py-28">
         <h6 class="text-white font-semibold pb-4 text-center">
             {{ $t('my') }} <span class="text-color-primary">{{ $t('services') }}</span>
         </h6>

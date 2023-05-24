@@ -37,7 +37,7 @@ export default {
 }
 </script>
 <template>
-    <section id="contact" class="container mx-auto py-8">
+    <section id="contact" class="container mx-auto py-28">
          <div>
             <h6 class="text-white font-semibold pb-4 text-center">
                 {{ $t('get_in') }} <span class="text-color-primary">{{ $t('touch') }}</span>
