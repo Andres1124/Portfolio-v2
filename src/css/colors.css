@@ -10,11 +10,14 @@
     --body-font: "Poppins", sans-serif;
 }
 
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
     background-color: var(--body-color);
     color: #fff;
     font-family: var(--body-font);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .text-color-primary {
