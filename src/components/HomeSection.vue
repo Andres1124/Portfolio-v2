@@ -46,9 +46,11 @@ export default {
                     </a>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2">
-                <div class="w-full h-full bg-primary rotate-45">
-
+            <div class="w-full hidden lg:flex lg:w-1/2">
+                <div class="w-full h-full flex justify-center items-center">
+                    <div class="h-[300px] w-[300px] bg-white rounded-full overflow-hidden border-2">
+                        <img class="mx-auto h-full" src="../assets/images/avatars.png" alt="avatar">
+                    </div>
                 </div>
             </div>
         </div>

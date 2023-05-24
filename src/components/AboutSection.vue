@@ -8,7 +8,10 @@ export default {
 <template>
     <section id="about" class="">
         <div class="container mx-auto py-8 flex flex-col items-center lg:flex-row">
-            <div class="w-full h-[400px] lg:w-1/2 lg:h-[600px]">
+            <div class="w-full flex items-center justify-center lg:w-1/2">
+                <div class="h-[250px] w-[250px] bg-white rounded-full overflow-hidden border-2 lg:w-[350px] lg:h-[3500px]">
+                    <img class="mx-auto h-full" src="../assets/images/avatars.png" alt="avatar">
+                </div>
             </div>
             <div class="w-full px-5 text-center py-6 lg:w-1/2 lg:text-left">
                 <p class="font-semibold text-white pb-2">
