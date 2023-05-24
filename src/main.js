@@ -7,7 +7,7 @@ import App from './App.vue';
 
 const i18n = createI18n({
     legacy: false,
-    locale: 'es',
+    locale: navigator.language.includes('es') ? 'es' : 'en',
     globalInjection: true,
     messages: {
         en,
