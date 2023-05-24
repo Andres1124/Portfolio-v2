@@ -33,5 +33,6 @@
     "touch": "Touch",
     "web_developer": "Web Developer",
     "web_developer_description": "I offer my expertise as a full-stack developer, to provide end-to-end solutions for your web development needs. With a comprehensive skill set encompassing HTML, CSS, JavaScript, PHP and more, I can handle all aspects of your project, from designing intuitive user interfaces to implementing robust server-side functionalities.",
+    "send_message_successfully": "Message send successfully",
     "what_i_do": "What I Do"
 }

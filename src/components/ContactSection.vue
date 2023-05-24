@@ -1,10 +1,13 @@
 <script>
-import { onMounted } from 'vue';
-export default {
+import { ref } from 'vue';
+import { IconSquareRoundedCheckFilled } from '@tabler/icons-vue';
 
+export default {
+    components: { IconSquareRoundedCheckFilled },
     setup(props) {
+        const sendForm = ref(false)
+
         const handleSubmit = (event) => {
-            console.log(event)
             event.preventDefault();
 
             const myForm = event.target;
@@ -15,18 +18,18 @@ export default {
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams(formData).toString(),
             })
-                .then(() => console.log("Form successfully submitted"))
-                .catch((error) => alert(error));
+                .then(() => {
+                    sendForm.value = true
+                    setTimeout(() => {
+                        sendForm.value = false;
+                    }, 4000);
+                })
+                .catch((error) => console.error(error));
         };
-
-        // onMounted(() => {
-        //     let form = document.getElementById("form-contact")
-        //     console.log(form)
-        //     form.addEventListener('submit', handleSubmit());
-        // })
 
 
         return {
+            sendForm,
             handleSubmit,
         }
     }
@@ -55,12 +58,12 @@ export default {
                         name="name"
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:mr-2"
                         type="text" 
-                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? { field: 'name' } : { field: 'nombre' })" />
+                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? { field: 'name' } : { field: 'nombre' })" required />
                     <input 
                         name="email"
                         class="w-full rounded-lg mt-4 bg-container-color p-4 text-body focus:outline-none lg:w-1/2 lg:mt-0 lg:ml-2"
                         type="email" 
-                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'email'} : { field: 'correo' })" />
+                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'email'} : { field: 'correo' })" required />
                 </div>
                 <div class="mt-4">
                     <textarea 
@@ -69,7 +72,13 @@ export default {
                         id="message" 
                         cols="30" 
                         rows="10"
-                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'message'} : { field: 'Mensaje' })"></textarea>
+                        :placeholder="$t('enter_your_field', $i18n.locale === 'en' ? {field: 'message'} : { field: 'Mensaje' })" required></textarea>
+                </div>
+                <div v-if="sendForm" class="text-center flex items-center justify-center pt-2">
+                    <IconSquareRoundedCheckFilled class="text-color-primary" />
+                    <span class="text-center ml-2">
+                        {{ $t('send_message_successfully') }}
+                    </span>
                 </div>
                 <div class="mt-8 flex justify-center">
                     <button class="px-4 py-3 bg-primary text-white font-semibold rounded-lg 
