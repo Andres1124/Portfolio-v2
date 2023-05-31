@@ -14,7 +14,8 @@ export default {
                 id: 1,
                 name: 'Maps Project',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum doloribus accusantium?',
-                imageUrl: '/src/assets/images/maps-project.png'
+                imageUrl: '/src/assets/images/maps-project.png',
+                projectUrl: 'https://github.com/Andres1124/maps-project',
             },
         ]);
 
@@ -48,11 +49,29 @@ export default {
                 <div v-for="project in projects"
                     :key="project.id"
                     @click="showCloseModal(true, project)" 
-                    class="w-[300px] h-[200px] flex justify-center items-center rounded-lg cursor-pointer overflow-hidden mx-4">
-                    <img :src="project.imageUrl" alt="project image" class="w-full h-full">
+                    class="flex justify-center items-center ">
+                    <div class="w-[280px] h-[200px] rounded-lg cursor-pointer overflow-hidden mx-4 relative container-image lg:w-[400px] lg:h-[250px]">
+                        <img :src="project.imageUrl" alt="project image" class="w-full h-full transition-all">
+                        <div class="absolute top-0 content-image transition-all duration-300 ease-in text-center w-full h-full p-4">
+                            <div class="flex flex-col justify-center items-center w-full h-full">
+                                <h5 class="text-white text-xl font-semibold">{{ project.name }}</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <Modal :open="openModal" @closeModal="showCloseModal" :project="selectedProject" />
 </template>
+<style scoped>
+.content-image {
+    opacity: 0;
+    visibility: hidden;
+}
+.container-image:hover > .content-image {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, .70);
+}
+</style>

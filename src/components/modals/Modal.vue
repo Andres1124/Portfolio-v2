@@ -50,17 +50,20 @@ export default {
                                     <IconX :size="30" class="cursor-pointer" />
                                 </div>
                                 <div class="mt-4">
-                                    <div class="bg-sky-500 w-4/5 h-[300px] rounded-lg mx-auto overflow-hidden">
+                                    <div class="w-4/5 h-[300px] rounded-lg mx-auto overflow-hidden">
                                         <img :src="project && project.imageUrl ? project.imageUrl : ''" alt="maps projects" class="w-full h-full">
                                     </div>
                                 </div>
-                                <div class="my-12 px-5">
+                                <div class="mt-4 px-5 pb-8">
+                                    <h3 class="text-white font-semibold text-2xl text-center pb-4">
+                                        {{ project && project.name ? project.name : '' }}
+                                    </h3>
                                     <p class="text-center">
                                         {{ project && project.description ? project.description : '' }}
                                     </p>
                                 </div>
                                 <div class="mt-4 px-5 pb-4">
-                                    <a href="#" target="_blank">
+                                    <a :href="project && project.projectUrl ? project.projectUrl : ''" target="_blank">
                                         <div class="w-full py-2 bg-primary text-white font-semibold
                                                         rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500 text-center">
                                             Ver código fuente
