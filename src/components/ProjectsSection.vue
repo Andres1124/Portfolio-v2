@@ -12,8 +12,8 @@ export default {
         const projects = ref([
             {
                 id: 1,
-                name: 'Maps Project',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum doloribus accusantium?',
+                name: 'project_map',
+                description: 'project_map_description',
                 imageUrl: '/src/assets/images/maps-project.png',
                 projectUrl: 'https://github.com/Andres1124/maps-project',
             },
@@ -26,7 +26,13 @@ export default {
 
             showCloseModal: (value, project = null) => {
                 openModal.value = value;
-                selectedProject.value = project;
+                if (!value) {
+                    setTimeout(() => {
+                        selectedProject.value = project;
+                    }, 200);
+                } else {
+                    selectedProject.value = project;
+                }
             },
         }
     }
@@ -54,7 +60,7 @@ export default {
                         <img :src="project.imageUrl" alt="project image" class="w-full h-full transition-all">
                         <div class="absolute top-0 content-image transition-all duration-300 ease-in text-center w-full h-full p-4">
                             <div class="flex flex-col justify-center items-center w-full h-full">
-                                <h5 class="text-white text-xl font-semibold">{{ project.name }}</h5>
+                                <h5 class="text-white text-xl font-semibold">{{ $t(project.name) }}</h5>
                             </div>
                         </div>
                     </div>

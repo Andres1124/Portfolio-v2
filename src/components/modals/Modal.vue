@@ -18,10 +18,8 @@ export default {
 <template>
     <transition 
         enter-active-class="ease-out duration-300"
-        enter-class="opacity-0"
         enter-to-class="opacity-100"
         leave-active-class="ease-in duration-200"
-        leave-class="opacity-100"
         leave-to-class="opacity-0"
         >
         <div 
@@ -35,19 +33,17 @@ export default {
             <div class="fixed inset-0 z-[1001] overflow-y-auto">
                 <div class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
                     <transition 
-                        enter-active-class="ease-out duration-300" 
-                        enter-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" 
+                        enter-active-class="ease-out duration-500 opacity-0 translate-y-4 sm:translate-y-0" 
                         enter-to-class="opacity-100 translate-y-0 sm:scale-100"
-                        leave-active-class="ease-in duration-200"
-                        leave-class="opacity-100 translate-y-0 sm:scale-100"
-                        leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        leave-active-class="ease-in duration-200 opacity-100 translate-y-0 sm:scale-100"
+                        leave-to-class="opacity-0 translate-y-4 sm:translate-y-0"
                         >
                         <div 
                             v-show="open" 
                             class="relative transform overflow-hidden rounded-lg text-left transition-all sm:my-8 sm:w-full sm:max-w-lg">
                             <div class="bg-container-color px-2 py-2">
-                                <div @click="closeModal" class="flex justify-end">
-                                    <IconX :size="30" class="cursor-pointer" />
+                                <div class="flex justify-end">
+                                    <IconX @click="closeModal" :size="30" class="cursor-pointer" />
                                 </div>
                                 <div class="mt-4">
                                     <div class="w-4/5 h-[300px] rounded-lg mx-auto overflow-hidden">
@@ -56,17 +52,17 @@ export default {
                                 </div>
                                 <div class="mt-4 px-5 pb-8">
                                     <h3 class="text-white font-semibold text-2xl text-center pb-4">
-                                        {{ project && project.name ? project.name : '' }}
+                                        {{ project && project.name ? $t(project.name) : '' }}
                                     </h3>
-                                    <p class="text-center">
-                                        {{ project && project.description ? project.description : '' }}
+                                    <p class="text-center text-body">
+                                        {{ project && project.description ? $t(project.description) : '' }}
                                     </p>
                                 </div>
                                 <div class="mt-4 px-5 pb-4">
                                     <a :href="project && project.projectUrl ? project.projectUrl : ''" target="_blank">
                                         <div class="w-full py-2 bg-primary text-white font-semibold
                                                         rounded-lg border-2 border-[#00AEFF] hover:bg-transparent duration-500 text-center">
-                                            Ver código fuente
+                                            {{ $t('see_repository') }}
                                         </div>
                                     </a>
                                 </div>
