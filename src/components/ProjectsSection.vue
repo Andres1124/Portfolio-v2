@@ -43,7 +43,12 @@ export default {
     <section id="projects" class="bg-container-color py-28">
 
         <div class="container mx-auto">
-            <div>
+            <div
+                data-aos="fade-up" 
+                data-aos-duration="500" 
+                data-aos-delay="200"
+                data-aos-easing="ease-in-sine"
+            >
                 <h6 class="text-white font-semibold pb-4 text-center">
                     {{ $t('my_') }} <span class="text-color-primary">{{ $t('jobs') }}</span>
                 </h6>
@@ -52,9 +57,14 @@ export default {
                 </h2>
             </div>
             <div class="flex mt-6 justify-center items-center lg:flex-row">
-                <div v-for="project in projects"
+                <div
+                    v-for="project in projects"
                     :key="project.id"
                     @click="showCloseModal(true, project)" 
+                    data-aos="zoom-in-up" 
+                    data-aos-duration="500" 
+                    data-aos-delay="400"
+                    data-aos-easing="ease-in-sine"
                     class="flex justify-center items-center ">
                     <div class="w-[280px] h-[200px] rounded-lg cursor-pointer overflow-hidden mx-4 relative container-image lg:w-[400px] lg:h-[250px]">
                         <img :src="project.imageUrl" alt="project image" class="w-full h-full transition-all">

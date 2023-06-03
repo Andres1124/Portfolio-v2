@@ -6,7 +6,7 @@
             <div
                 data-aos="fade-up" 
                 data-aos-duration="500" 
-                data-aos-delay="600"
+                data-aos-delay="300"
                 data-aos-easing="ease-in-sine"
                 class="w-full text-center px-5 lg:w-1/2 lg:text-left">
                 <p v-if="$i18n.locale === 'en'" class="text-white font-semibold pb-2">
@@ -32,7 +32,7 @@
             <div 
                 data-aos="fade-up" 
                 data-aos-duration="500" 
-                data-aos-delay="900"
+                data-aos-delay="600"
                 data-aos-easing="ease-in-sine" 
                 class="w-full flex justify-center mt-5 lg:mt-0 lg:w-1/2">
                 <div class="flex flex-col items-center lg:flex-row lg:items-start">

@@ -28,7 +28,7 @@ export default {
                 <h1
                     data-aos="fade-up"
                     data-aos-offset="300"
-                    data-aos-delay="400"
+                    data-aos-delay="200"
                     data-aos-duration="500" 
                     data-aos-easing="ease-in-sine"
                  class="text-color-primary text-6xl font-bold pb-4">
@@ -38,7 +38,7 @@ export default {
                     data-aos="fade-up"
                     data-aos-offset="300"
                     data-aos-duration="500" 
-                    data-aos-delay="700"
+                    data-aos-delay="300"
                     data-aos-easing="ease-in-sine"
                     class="text-3xl text-white font-semibold pb-4">
                     {{ $t('web_developer') }}
@@ -46,14 +46,14 @@ export default {
                 <p 
                     data-aos="fade-up" 
                     data-aos-duration="500" 
-                    data-aos-delay="1100"
+                    data-aos-delay="600"
                     class="text-body">
                     {{ $t('home_description') }}
                 </p>
                 <div 
                     data-aos="fade-up" 
                     data-aos-duration="500" 
-                    data-aos-delay="1100"
+                    data-aos-delay="600"
                     class="mt-14">
                     <a href="https://www.linkedin.com/in/andr%C3%A9s-delgado-p%C3%A9rez-135a311b6/" target="_blank"
                         class="px-4 py-3 bg-primary text-white font-semibold
@@ -65,7 +65,7 @@ export default {
                     class="flex items-center justify-center mt-20"  
                     data-aos="fade-up" 
                     data-aos-duration="500" 
-                    data-aos-delay="1500">
+                    data-aos-delay="700">
                     <a href="https://github.com/Andres1124" target="_blank"
                         class="p-2 w-max text-white bg-primary rounded-full mx-4 
                                         hover:scale-[.90] duration-700 border-2 border-[#00AEFF] hover:bg-transparent">

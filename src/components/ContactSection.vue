@@ -42,7 +42,7 @@ export default {
          <div 
             data-aos="fade-up" 
             data-aos-duration="500" 
-            data-aos-delay="400"
+            data-aos-delay="200"
             data-aos-easing="ease-in-sine">
             <h6 class="text-white font-semibold pb-4 text-center">
                 {{ $t('get_in') }} <span class="text-color-primary">{{ $t('touch') }}</span>
@@ -54,7 +54,7 @@ export default {
         <div
             data-aos="fade-up" 
             data-aos-duration="500" 
-            data-aos-delay="800"
+            data-aos-delay="400"
             data-aos-easing="ease-in-sine"  
             class="w-full px-5 mx-auto lg:w-1/2 lg:mt-8">
             <form 

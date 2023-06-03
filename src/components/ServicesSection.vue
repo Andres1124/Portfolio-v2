@@ -10,7 +10,7 @@ export default {
         <h6 
             data-aos="fade-up" 
             data-aos-duration="500" 
-            data-aos-delay="400"
+            data-aos-delay="200"
             data-aos-easing="ease-in-sine" 
             class="text-white font-semibold pb-4 text-center">
             {{ $t('my') }} <span class="text-color-primary">{{ $t('services') }}</span>
@@ -18,7 +18,7 @@ export default {
         <h2 
             data-aos="fade-up" 
             data-aos-duration="500" 
-            data-aos-delay="600"
+            data-aos-delay="200"
             data-aos-easing="ease-in-sine" 
             class="text-4xl text-white font-bold pb-5 text-center">
             {{ $t('what_i_do') }}
@@ -27,7 +27,7 @@ export default {
             <div
                 data-aos="zoom-in-up" 
                 data-aos-duration="500" 
-                data-aos-delay="900"
+                data-aos-delay="400"
                 data-aos-easing="ease-in-sine"  
                 class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
@@ -45,7 +45,7 @@ export default {
             <div
                 data-aos="zoom-in-up" 
                 data-aos-duration="500" 
-                data-aos-delay="900"
+                data-aos-delay="400"
                 data-aos-easing="ease-in-sine"  
                 class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
@@ -63,7 +63,7 @@ export default {
             <div
                 data-aos="zoom-in-up" 
                 data-aos-duration="500" 
-                data-aos-delay="900"
+                data-aos-delay="400"
                 data-aos-easing="ease-in-sine"  
                 class="w-full mt-6 bg-container-color px-6 py-12 rounded-lg border-2 border-[#21232c] hover:border-[#00AEFF] duration-500 lg:mx-2 lg:mt-0 lg:w-1/3">
                 <div class="text-color-primary">
