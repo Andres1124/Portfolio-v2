@@ -1,5 +1,5 @@
 <script>
-import { defineEmits } from 'vue';
+import { ref } from 'vue';
 import { IconX } from '@tabler/icons-vue';
 export default {
     components: { IconX },
@@ -46,8 +46,8 @@ export default {
                                     <IconX @click="closeModal" :size="30" class="cursor-pointer" />
                                 </div>
                                 <div class="mt-4">
-                                    <div class="w-4/5 h-[300px] rounded-lg mx-auto overflow-hidden">
-                                        <img :src="project && project.imageUrl ? project.imageUrl : ''" alt="maps projects" class="w-full h-full">
+                                    <div v-if="project" class="w-4/5 h-[300px] rounded-lg mx-auto overflow-hidden">
+                                        <img src="../../assets/images/maps-project.png" alt="maps projects" class="w-full h-full">
                                     </div>
                                 </div>
                                 <div class="mt-4 px-5 pb-8">
