@@ -47,7 +47,7 @@ export default {
                                 </div>
                                 <div class="mt-4">
                                     <div v-if="project" class="w-4/5 h-[300px] rounded-lg mx-auto overflow-hidden">
-                                        <img src="../../assets/images/maps-project.png" alt="maps projects" class="w-full h-full">
+                                        <img :src="project.imageUrl" alt="maps projects" class="w-full h-full">
                                     </div>
                                 </div>
                                 <div class="mt-4 px-5 pb-8">

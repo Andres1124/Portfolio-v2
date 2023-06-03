@@ -14,7 +14,7 @@ export default {
                 id: 1,
                 name: 'project_map',
                 description: 'project_map_description',
-                imageUrl: '/src/assets/images/maps-project.png',
+                imageUrl: 'https://img.freepik.com/vector-gratis/vista-isometrica-aplicacion-movil-navegacion_23-2147567795.jpg?w=826&t=st=1685760767~exp=1685761367~hmac=a775873fa7cdfadbdbeb5165802b023d1d3313042770a250d9049224e00201b3',
                 projectUrl: 'https://github.com/Andres1124/maps-project',
             },
         ]);
